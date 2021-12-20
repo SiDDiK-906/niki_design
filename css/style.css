@@ -1,0 +1,1052 @@
+/*======================================
+		Common CSS Section Start
+======================================*/
+body{
+	overflow-x: hidden;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+	padding: 0;
+	margin: 0;
+}
+ul,
+ol{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+.container{
+	padding: 0;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+}
+.button a {
+	display: inline-block;
+	border-radius: 30px;
+	color: #222222;
+	background: transparent;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Dosis', sans-serif;
+	text-transform: capitalize;
+	padding: 15px 20px;
+	border: 1px solid #de6262; 
+	/* ffb88c */
+	transition: 0.4s;
+}
+.button a:hover{
+	background-image: linear-gradient(to right, #de6262 , #ffb88c);
+	color: #ffffff;
+	border-color: transparent;
+}
+.title{
+	margin-bottom: 50px;
+	position: relative;
+}
+.title::after {
+	content: "";
+	position: absolute;
+	top: 6px;
+	background-image: linear-gradient(to top, #de6262 , #ffb88c);
+	height: 90%;
+	width: 3px;
+}
+.title h1{
+	color: #222222;
+	font-size: 35px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.title h5{
+	color: #444444;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+/*======================================
+		Common CSS Section End
+======================================*/
+/*======================================
+		Nav Bar Section Start
+======================================*/
+#navbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+#navbar .container{
+	position: relative;
+}
+#navbar .logo .img{
+	display: inline-block;
+	margin-top: 30px;
+}
+#navbar ul li a{
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+#navbar .circle-nav-wrapper .circle-nav-toggle i{
+	background: linear-gradient(to right, #ff5f6d, #ffc371);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	font-size: 26px;
+}
+#navbar  .circle-nav-panel{
+	position: relative;
+}
+#navbar  .circle-nav-panel .big_circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 0;
+	height: 0;
+	transition: width .2s cubic-bezier(0, 1.16, 1, 1), height .2s cubic-bezier(0, 1.16, 1, 1);
+	border-radius: 50%;
+	background: transparent;
+}
+#navbar .circle-nav-open .big_circle {
+	height: 410px;
+	width: 410px;
+	border: 2px solid rgba(255, 184, 140,0.7);
+}
+.circle-nav-wrapper .circle-nav-panel.circle-nav-open {
+	border: 2px solid rgba(222, 98, 98,0.7);
+}
+/*======================================
+		Nav Bar Section End
+======================================*/
+/*======================================
+		Banner Section Start
+======================================*/
+#banner{
+	position: relative;
+}
+.for_xs_sm_md{
+	display: none;
+}
+.for_lg_nor_xl{
+	display: block;
+}
+#banner .button a:nth-child(2){
+	padding: 15px 30px;
+}
+/* left */
+#banner .left {
+	margin-top: 170px;
+	margin-left: 18px;
+	width: 38%;
+}
+#banner .left h3{
+	color: #222222;
+	font-size: 48px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+	z-index: 999;
+	position: relative;
+}
+#banner .left h1{
+	background-image: linear-gradient(to top, #de6262 , #ffb88c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 82px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+#banner .left p{
+	color: #444444;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	padding: 20px 0 40px 0;
+}
+/* right */
+#banner .right{
+	position: absolute;
+	right: -250px;
+	top: 0;
+	clip-path: circle(95% at 90% -10%);
+	overflow: hidden;
+	/* width: 83%; */
+}
+#banner .right .img{
+	position: relative;
+}
+#banner .right .img .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0,0.7);
+}
+#banner .right .img img{
+	height: 100%;
+	width: 100%;
+}
+/*======================================
+		Banner Section End
+======================================*/
+/*======================================
+		Service Section Start
+======================================*/
+#service{
+	margin-top: 229px;
+}
+#service .title::after {
+	left: -10px;
+}
+#service .main{
+	position: relative;
+}
+#service .main::before{
+	content: "";
+	position: absolute;
+	left: 32.8%;
+	top: 0;
+	height: 100%;
+	width: 1px;
+	background: #d4d4d4;
+}
+#service .main::after{
+	content: "";
+	position: absolute;
+	right: 32.8%;
+	top: 0;
+	height: 100%;
+	width: 1px;	
+	background: #d4d4d4;
+} 
+#service .main .item h3{
+	color: #222222;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+#service .main .item p{
+	color: #444444;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+#service .item .img{
+	width: 24%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#service .item .img .border{
+	border: 1px solid #444444 !important;
+	border-radius: 50%;
+	background: transparent;
+	height: 90px;
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#service .item .text{
+	width: 71%;
+}
+/* service up */
+#service .up{
+	position: relative;
+}
+#service .up::after{
+	content: "";
+	position: absolute;
+	bottom: 13px;
+	left: 0%;
+	height: 1px;
+	width: 100%;
+	background: #d4d4d4;
+}
+#service .up .item{
+	margin-bottom: 30px;
+}
+/* service down */
+#service .main .same:nth-child(even) .row .item{
+	flex-direction: row-reverse;
+}
+#service .main .same:nth-child(even) .row .item .text{
+	text-align: right;
+}
+/*======================================
+		Service Section End
+======================================*/
+/*======================================
+		About Us Section Start
+======================================*/
+#about_us{
+	margin-top: 80px;
+}
+#about_us .title{
+	text-align: right;
+}
+#about_us .title::after {
+	right: -10px !important;
+}
+#about_us .row{
+	justify-content: space-between;
+}
+/* left */
+#about_us .left .main{
+	transform: rotate(-45deg);
+	position: relative;
+}
+#about_us .left .main .common{
+	justify-content: space-between;
+}
+#about_us .left .main .item {
+	height: 175px;
+	width: 175px;
+	margin-bottom: 15px;
+	position: absolute;
+}
+#about_us .left .main .item1 {
+	border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+	overflow: hidden;
+	top: 14px;
+	left: -143px;
+}
+#about_us .left .main .item2 {
+	height: 180px;
+	width: 180px;
+	border-radius: 5px;
+	overflow: visible;
+	top: -26px;
+	left: 81px;
+}
+#about_us .left .main .item3 {
+	border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
+	overflow: hidden;
+	top: 202px;
+	left: -143px;
+}
+#about_us .left .main .item4 {
+	border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+	overflow: hidden;
+	top: 201px;
+	left: 45px;
+}
+
+#about_us .left .main .item1 img {
+	transform: rotate(45deg);
+	margin: 0px 0px 0px -55px;
+}
+#about_us .left .main .item2 img {
+	transform: rotate(45deg);
+	margin: -42px 0px 0px -80px;
+}
+#about_us .left .main .item3 img {
+	transform: rotate(45deg);
+	margin: -45px 0px 0px -62px;
+}
+#about_us .left .main .item4 img {
+	transform: rotate(45deg);
+	margin: 0px 0px 0px -83px;
+}
+/* right */
+#about_us .right{
+	text-align: right;
+}
+#about_us .right p{
+	color: #444444;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+#about_us .right .p1{
+	color: #de6262;
+}
+#about_us .right .p2 {
+	margin: 25px 35px 25px 0;
+}
+#about_us .right .p3 {
+	margin: 0 35px 25px 0;
+}
+#about_us .right span{
+	color: #444444;
+	font-size: 20px;
+	line-height: 24px;
+	font-family: 'Architects Daughter', cursive; 
+	font-weight: 400;
+}
+#about_us .right .designation{
+	margin-right: 35px;
+}
+/*======================================
+		About Us Section End
+======================================*/
+/*======================================
+		Portfolio Section Start
+======================================*/
+#portfolio{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#portfolio .title h1{
+	color: #ffffff;
+}
+#portfolio .title h5{
+	color: #ffffff;
+}
+#portfolio .title::after {
+	left: -10px;
+}
+#portfolio .main{
+	background: url(../images/portfolio_bg.png) no-repeat center;
+	background-size: cover;
+}
+#portfolio .main .main_overlay{
+	background: rgba(0, 0, 0,0.7);
+	height: 100%;
+	width: 100%;
+	padding: 50px 0;
+}
+#portfolio .main .up{
+	margin-bottom: 30px;
+}
+#portfolio .main .item2{
+	margin-bottom: 30px;
+}
+#portfolio .main .item4{
+	margin-bottom: 30px;
+}
+#portfolio .main .item{
+	overflow: hidden;
+	transition: 0.4s;
+}
+#portfolio .main .item .img{
+	position: relative;
+}
+#portfolio .main .item .img img{
+	height: 100%;
+	width: 100%;
+}
+#portfolio .main .item .img .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.4s;
+}
+#portfolio .main .item .img .overlay::before{
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(222, 98, 98,0.7);
+	clip-path: polygon(0 0, 0% 100%, 100% 0);
+	transition: 0.4s;
+}
+#portfolio .main .item .img .overlay::after{
+	content: "";
+	position: absolute;
+	bottom: -100%;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 184, 140,0.7);
+	clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+	transition: 0.4s;
+}
+#portfolio .main .item:hover .img .overlay::before{
+	top: 0%;
+}
+#portfolio .main .item:hover .img .overlay::after{
+	bottom: 0%;
+}
+#portfolio .main .item:hover .img .overlay{
+	opacity: 1;
+}
+#portfolio .main .item .img .overlay .text {
+	text-align: center;
+	z-index: 1;
+}
+#portfolio .main .item .img .overlay .text .icon{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#portfolio .main .item .img .overlay .text .icon i{
+	color: #444444;
+	font-size: 20px;
+}
+#portfolio .main .item .img .overlay .text p{
+	color: #222222;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+/*======================================
+		Portfolio Section End
+======================================*/
+/*======================================
+		Plugin Section Start
+======================================*/
+#plugin{
+	margin-bottom: 100px;
+	position: relative;
+}
+#plugin .main{
+	padding: 10px 0;
+}
+#plugin .item {
+	margin: 37.3px 0;
+}
+/* curve line */
+#plugin .line {
+	position: absolute;
+	top: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/* left side */
+#plugin .item .left{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	text-align: right;
+	margin-right: 20px;
+}
+#plugin .item .left h3{
+	color: #222222;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+#plugin .item .left p{
+	color: #222222;
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+/* middle side */
+#plugin .item .middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+/* right side */
+#plugin .item .text{
+	padding-right: 32%;
+}
+#plugin .item .text p{
+	color: #444444;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	background: transparent;
+	padding: 20px 30px 20px 10px;
+	filter: drop-shadow(0 0 2px transparent);
+}
+/* Slider arrows */
+#plugin .slick-arrow{
+	height: 25px;
+	width: 25px;
+	background: #444444;
+	color: #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 25px;
+	position: absolute;
+	left: 36.8%;
+	transform: translateX(-50%);
+	cursor: pointer;
+	transition: 0.4s;
+	z-index: 999;
+}
+#plugin .slick-arrow:hover{
+	color: #222222;
+	background-image: linear-gradient(to right, #de6262 , #ffb88c);
+}
+#plugin .up_arrow{
+	top: 0px;
+}
+#plugin .bottom_arrow{
+	bottom: 0;
+}
+/* slick center */
+#plugin .slick-center .row{
+	flex-direction: row-reverse;
+}
+#plugin .slick-center .left {
+	justify-content: flex-start;
+	text-align: center;
+}
+#plugin .slick-center .text {
+	padding-right: 2.5% !important;
+	padding-left: 32%;
+	text-align: right;
+}
+#plugin .slick-center .text p {
+	background: #f1f1f1;
+	padding: 20px 30px 20px 10px;
+	filter: drop-shadow(0 0 2px rgba(0, 0, 0,0.5));
+	position: relative;
+}
+#plugin .slick-center .text p::after{
+	content: "";
+	position: absolute;
+	right: -7px;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+	height: 20px;
+	width: 20px;
+	background: #f1f1f1;
+}
+#plugin .slick-center .middle {
+	justify-content: center;
+}
+/*======================================
+		Plugin Section End
+======================================*/
+/*======================================
+		Price Section Start
+======================================*/
+#price{
+	margin-bottom: 100px;
+}
+#price .title{
+	text-align: right;
+}
+#price .title::after {
+	right: -10px !important;
+}
+#price .item{
+	text-align: center;
+	background: #f1f1f1;
+	padding: 30px 0 10px 0;
+	border-radius: 5px;
+	margin: 0 15px;
+}
+#price .item:hover{
+	filter: drop-shadow(0 0 2px rgba(0, 0, 0,0.5));
+	background-image: linear-gradient(to top, #de6262 , #ffb88c);
+}
+#price .item h3{
+	color: #222222;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+#price .item .amount{
+	 justify-content: center;
+	 margin: 20px 0;
+}
+#price .item .amount h1{
+	color: #222222;
+	font-size: 40px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+}
+#price .item .amount h2 {
+	color: #222222;
+	font-size: 26px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-align: left;
+	margin-bottom: -8px;
+}
+#price .item .amount span{
+	color: #444444;
+	font-size: 14px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+#price .item .img{
+	background: linear-gradient(90deg, rgba(222, 98, 98,0.7) 12%, rgb(255, 184, 140) 51%,rgba(222, 98, 98,0.7) 87%);
+	border-bottom: 1px solid #eb3535;
+	padding: 30px 0 0 0;
+}
+#price .item:hover .img{
+	background: linear-gradient(90deg, #f1f1f1 12%,#f1f1f1 51%,#f1f1f1 87%);
+	border-bottom: 1px solid transparent;
+}
+#price .item .img img {
+	-webkit-text-stroke: 1px rgba(255, 255, 255,1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 20px;
+}
+#price .item .img .buttonz{
+	transform: translateY(50%);
+}
+#price .item .img a{
+	color: #444444;
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 10px 15px;
+	border: 1px solid #ff5f6d;
+	background: #ffffff;
+	border-radius: 25px;
+}
+#price .item ul{
+	margin-top: 40px;
+}
+#price .item ul li{
+	color: #444444;
+	font-size: 14px;
+	line-height: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+/*======================================
+		Price Section End
+======================================*/
+/*======================================
+		Team Section Start
+======================================*/
+#team {
+	margin-bottom: 100px;
+}
+#team .title::after {
+	left: -10px;
+}
+#team .item{
+	text-align: center;
+	overflow: hidden;
+}
+#team .item .img{
+	position: relative;
+}
+#team .item .img img{
+	width: 100%;
+	height: 100%;
+}
+#team .item .img .overlay{
+	background-image: linear-gradient(to right, rgba(222, 98, 98,0.8) , rgba(255, 184, 140,0.8));
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -100%;
+	left: 0;
+	opacity: 0;
+	transition: 0.4s;
+}
+#team .item:hover .img .overlay{
+	top: 0;
+	opacity: 1;
+}
+#team .item .img .overlay .text{
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: 0.4s;
+}
+#team .item:hover .img .overlay .text{
+	top: 65%;
+}
+#team .item  p{
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+#team .item  span{
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+#team .item .icon{
+	display: flex;
+	justify-content: space-around;
+}
+#team .item .icon i{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+	font-size: 18px;
+	background: transparent;
+	margin-top: 20px;
+}
+#team .item .icon i:hover{
+	color: #444444;
+	border-color: #ffffff;
+	background: #ffffff;
+}
+/*======================================
+		Team Section End
+======================================*/
+/*======================================
+		Blog Section Start
+======================================*/
+#blog{
+	margin-bottom: 100px;
+}
+#blog .title{
+	text-align: right;
+}
+#blog .title::after {
+	right: -10px !important;
+}
+/* left side */
+#blog .item .left .img{
+	position: relative;
+}
+#blog .item .left .img .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to right, rgba(222, 98, 98,0.8) , rgba(255, 184, 140,0.8));
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#blog .item:hover .left .img .overlay{
+	opacity: 1;
+}
+#blog .item .left .img .overlay span{
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 500;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+#blog .item .left .img .overlay span i{
+	margin-left: 5px;
+}
+/* right side */
+#blog .item .right{
+	margin-left: 20px;
+}
+#blog .item .right .text h3{
+	color: #222222;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+#blog .item:hover .right .text h3{
+	background-image: linear-gradient(to top, #de6262 , #ffb88c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#blog .right .text p{
+	color: #444444;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	padding-right: 15px;
+}
+#blog .right .text span{
+	color: #777777;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+#blog .right .text i{
+	font-size: 13px;
+	margin-right: 5px;
+}
+#blog .right .text .share{
+	margin: 10px 0 20px 0;
+}
+#blog .right .text .common{
+	margin-right: 15px;
+}
+/*======================================
+		Blog Section End
+======================================*/
+/*======================================
+		Sponsored Section Start
+======================================*/
+.brand{
+	background: transparent;
+	padding: 20px 0; 
+} 
+.brand .common{
+	text-align: center;
+	background: transparent;
+	padding: 35px 10px;
+	margin: 20px 10px;
+	transition: 0.4s;
+	outline: none;
+	border: 1px solid transparent;
+}
+.brand .common img{
+	margin: 0 auto; 
+}
+.brand .slick-list .slick-center {
+	box-shadow: 0px 0px 2px 1px rgba(0,1,1,0.3);
+	border: 1px solid #ff5f6d;
+}
+/*======================================
+		Sponsored Section End
+======================================*/
+/*======================================
+		Footer Section Start
+======================================*/
+#footer{
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+    /* box-shadow: -11px -20px 48px -36px rgba(0,0,0,0.52); */
+}
+#footer .footeritem h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+/* Left Side */
+#footer .footeritem1 .text p {
+	padding: 10px 20px 30px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #212529;
+}
+#footer .footeritem1 .logo .p1 {
+	padding: 5px 10px 0 23px;
+}
+#footer .footeritem1 .icon{
+    width: 100%;
+    display: flex;
+}
+#footer .footeritem1 .icon i{
+    border: 1px solid #de6262;
+    border-radius: 50%;
+    color: #0f2f44;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 3%;
+	background: transparent;
+}
+#footer .footeritem1 .icon i:hover{
+	background-image: linear-gradient(to right, #de6262 , #ffb88c);
+	color: #ffffff;
+	border-color: transparent;
+}
+/* Our Location */
+.footeritem2 .contact_text p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #444444;
+	padding-right: 20%;
+}
+.footeritem2 .contact_text .email{
+	margin: 28px 0;
+}
+/* Important links */
+.footeritem3 .importantlist ul li a{
+    color: #444444;
+	font-family: 'Open Sans', sans-serif;   
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 40px;
+}
+.footeritem3 .importantlist ul li{
+    transition: .4s;
+}
+.footeritem3 .importantlist ul li:hover{
+    margin-left: 15px;
+}
+/* Instagram Photos */
+.footeritem4 .footerimg{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footeritem4 .footerimg .pic{
+    width: 31%;
+    margin-bottom: 15px;
+}
+.footeritem4 .footerimg .pic img{
+    width: 100%;
+}
+/*======================================
+		Footer Section End
+======================================*/
+/*======================================
+		Copyright Section Start
+======================================*/
+.copyright{
+	text-align: center;
+	background: #f1f1f1;
+	border-top: 1px solid #dddddd;
+}
+.copyright .text p{
+	font-size: 14px;
+	font-weight: 400;
+	color: #444444;
+    font-family: 'Open Sans', sans-serif;
+	padding: 15px 0;
+	margin-bottom: 0 !important;
+}
+/*======================================
+		Copyright Section End
+======================================*/
